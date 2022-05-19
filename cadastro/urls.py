@@ -21,4 +21,6 @@ urlpatterns = [
     path("admin/", admin.site.urls),
     # User Management
     path('accounts/', include('allauth.urls')),
+    # local
+    path('', include('pages.urls', namespace='pages')),
 ]
